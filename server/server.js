@@ -42,13 +42,13 @@ app.get('/todos/:id', (req, res) => {
     if(!todo) {
       return res.status(404).send();
     }
+    
     res.send({todo});
   }).catch((e) => {
     res.status(400).send();
   })
 });
 
-//GET /Todos/1234324
  app.listen(3000, () => {
    console.log('Started on port 3000');
  });
