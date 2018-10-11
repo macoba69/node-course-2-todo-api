@@ -1,11 +1,11 @@
 {
-  "name": "todo-api",
+  "name": "node-todo-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha server/**/*.test.js ",
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha server/**/*.test.js",
     "test-watch": "nodemon --exec 'npm test'"
   },
   "engine": {
@@ -16,12 +16,14 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.6",
     "debug-log": "^1.0.1",
     "express": "^4.16.3",
+    "jsonwebtoken": "^7.1.9",
     "lodash": "^4.17.11",
     "mongodb": "^3.1.6",
     "mongoose": "^4.5.9",
-    "validator": "^10.8.0"
+    "validator": "^5.6.0"
   },
   "devDependencies": {
     "expect": "^1.20.2",
